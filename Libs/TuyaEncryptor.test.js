@@ -32,7 +32,7 @@ export default class TuyaEncryptor extends BaseClass
     setBroadcastIp(ipAddress)
     {
         let parts = ipAddress.split('.');
-        parts[3] = '255';
+        parts[3] = '254';
         this.broadcastIp = parts.join('.');
     }
 
